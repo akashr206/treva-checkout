@@ -24,16 +24,17 @@ const Indicator = ({ step }) => {
 
     return (
         <div>
-            <div className="flex mx-auto justify-center">
+            <div className="flex mx-auto items-center justify-between md:justify-center text-sm">
                 {["Personal details", "Payment", "Complete"].map(
                     (item, index) => (
-                        <div
-                            key={index}
-                            className="flex px-3 items-center gap-3"
-                        >
+                        <>
+                            <div
+                                key={index}
+                                className="flex md:px-3 px-0.5 items-center md:gap-3 gap-1"
+                            >
                                 <div
                                     className={cn(
-                                        "w-8 h-8 flex items-center justify-center rounded-full font-semibold bg-zinc-200 text-zinc-700",
+                                        "md:w-8 md:h-8 h-6 w-6 max-md:text-sm flex items-center justify-center rounded-full font-semibold shrink-0 bg-zinc-200 text-zinc-700",
                                         selectedStep === index
                                             ? "bg-indigo-300/50 border border-indigo-600 text-indigo-600"
                                             : selectedStep > index
@@ -55,14 +56,14 @@ const Indicator = ({ step }) => {
                                 >
                                     {item}
                                 </p>
-
+                            </div>
                             {index !== 2 && (
                                 <span
                                     id={"span" + index}
-                                    className="border ml-3 h-0.5 w-20"
+                                    className="border h-0.5 w-4 md:w-20"
                                 ></span>
                             )}
-                        </div>
+                        </>
                     )
                 )}
             </div>

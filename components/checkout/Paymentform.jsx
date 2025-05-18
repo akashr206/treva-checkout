@@ -38,7 +38,7 @@ export default function PaymentForm() {
     }, []);
 
     return (
-        <div className="w-[60%]">
+        <div className="md:w-[60%]">
             <Card className={"h-full justify-between shadow-none"}>
                 <CardHeader>
                     <CardTitle className="text-lg px-6 font-semibold">
@@ -141,8 +141,8 @@ export default function PaymentForm() {
                                                         className="w-full"
                                                     />
                                                 </div>
-                                                <div className="grid grid-cols-12 gap-4">
-                                                    <div className="col-span-6">
+                                                <div className="grid grid-cols-12 max-md:grid-rows-2 gap-4">
+                                                    <div className="col-span-6 max-md:col-span-12">
                                                         <Label
                                                             htmlFor="name-on-card"
                                                             className="mb-2"
@@ -155,7 +155,7 @@ export default function PaymentForm() {
                                                             className="w-full"
                                                         />
                                                     </div>
-                                                    <div className="col-span-3">
+                                                    <div className="col-span-3 max-md:col-span-6">
                                                         <Label
                                                             htmlFor="expiry"
                                                             className="mb-2"
@@ -168,7 +168,7 @@ export default function PaymentForm() {
                                                             className="w-full"
                                                         />
                                                     </div>
-                                                    <div className="col-span-3">
+                                                    <div className="col-span-3 max-md:col-span-6">
                                                         <Label
                                                             htmlFor="cvv"
                                                             className="mb-2"

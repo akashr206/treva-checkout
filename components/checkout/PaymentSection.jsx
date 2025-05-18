@@ -5,7 +5,7 @@ import Cancelation from "@/components/checkout/Cancellation";
 const PaymentSection = () => {
     return (
         <>
-            <div className="flex gap-4">
+            <div className="flex max-md:flex-col gap-4">
                 <Payment></Payment>
                 <Cart></Cart>
             </div>

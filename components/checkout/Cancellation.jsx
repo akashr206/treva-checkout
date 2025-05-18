@@ -5,7 +5,7 @@ const Cancelation = () => {
     return (
         <Card>
             <CardContent className={" px-10 flex justify-between"}>
-                <div className="w-[80%] flex flex-col gap-3">
+                <div className="md:w-[80%] flex flex-col gap-3">
                     <h2 className="font-semibold text-xl">
                         Cancelation Policy
                     </h2>
@@ -24,6 +24,7 @@ const Cancelation = () => {
                     src="/cancelation.png"
                     width={160}
                     height={160}
+                    className="max-md:hidden"
                     alt="cancelation"
                 ></Image>
             </CardContent>

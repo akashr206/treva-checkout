@@ -27,7 +27,7 @@ export default function ShoppingCart() {
     const tax = 108.80
     const total = subtotal + tax;
     return (
-        <div className="w-[40%] max-w-md mx-auto">
+        <div className="md:w-[40%] md:max-w-md ">
             <Card className="border-none h-full relative overflow-clip rounded-xl shadow-sm">
                 <div className="absolute bottom-0 right-0 h-1/2 w-4/5 blur-3xl rounded-t-full cart" />
                 <div className="absolute top-0 left-0 h-1/2 w-full blur-3xl rounded-b-full cart2" />
